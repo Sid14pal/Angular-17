@@ -33,11 +33,13 @@
 }
 
 .badge{
-    background: red;
     position: absolute;
     font-size: 14px;
     text-align: center;
-    padding: 0.3em;
+    padding: 0.2em;
+    color: #eee;
+    top: 10px;
+    background: red;
 }
 
 .svg-inline--fa {
