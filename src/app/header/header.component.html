@@ -1,0 +1,52 @@
+<section>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" routerLink="">Logo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mynavbar">
+            <ul class="navbar-nav ms-auto" *ngIf="menuType==='default'">
+              <div class="input-group mr-5 search-bar">
+                <div class="form-outline">
+                  <input type="search" id="form1" class="form-control search" placeholder="Search Your Items" />
+                </div>
+                <button type="button" class="btn btn-primary">
+                  <fa-icon [icon]="faIcon"></fa-icon>
+                </button>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="seller-auth">Seller</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="cart"><fa-icon [icon]="faCart"></fa-icon><span class="badge">{{ cartItemsCount }}</span></a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav ms-auto" *ngIf="menuType==='seller'">
+              <li class="nav-item">
+                <a class="nav-link" routerLink="seller-home">Product List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="seller-add-product">Add Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" (click)="logOut()">Logout</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">( {{sellerName | titlecase}} )</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</section>

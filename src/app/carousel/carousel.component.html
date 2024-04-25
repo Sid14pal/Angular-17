@@ -1,0 +1,34 @@
+@if (images) {
+	<ngb-carousel>
+		<ng-template ngbSlide>
+			<div class="picsum-img-wrapper">
+				<img [src]="images[0]" alt="Random first slide" class="banner-image" />
+			</div>
+			<div class="carousel-caption">
+				<h3 class="carousel-text">Fall Fashion Frenzy</h3>
+				<p class="text-light">Shop the latest fashion must have, Sell Upto 50% off</p>
+				<button type="button" class="btn btn-primary btn-custom">Shop Now</button>
+			</div>
+		</ng-template>
+		<ng-template ngbSlide>
+			<div class="picsum-img-wrapper">
+				<img [src]="images[1]" alt="Random second slide" class="banner-image" />
+			</div>
+			<div class="carousel-caption">
+				<h3 class="carousel-text text-dark">Gaming Accessories</h3>
+				<p class="text-dark">Gaming accessories include gear such as headsets and much more.</p>
+				<button type="button" class="btn btn-primary btn-custom">Shop Now</button>
+			</div>
+		</ng-template>
+		<ng-template ngbSlide>
+			<div class="picsum-img-wrapper">
+				<img [src]="images[2]" alt="Random third slide" class="banner-image" />
+			</div>
+			<div class="carousel-caption">
+				<h3 class="carousel-text text-dark">A fresh way<br> to feel better</h3>
+				<p>Help you on your way to the best.</p>
+				<button type="button" class="btn btn-primary btn-custom">Shop Now</button>
+			</div>
+		</ng-template>
+	</ngb-carousel>
+}

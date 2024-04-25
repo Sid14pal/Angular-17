@@ -1,0 +1,23 @@
+.carousel-caption {
+    position: absolute;
+    right: 55%;
+    top: 0;
+    left: 15%;
+    padding-top: 16.25rem;
+    padding-bottom: 1.25rem;
+    color: #000;
+    text-align: center;
+}
+
+.carousel-text{
+    font-weight: 200;
+    font-size: 60px;
+    color: #fff;
+}
+
+.banner-image{
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    min-height: calc(100vh - 200px);
+}

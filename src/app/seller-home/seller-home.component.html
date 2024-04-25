@@ -1,0 +1,31 @@
+<div class="seller-home-product">
+    <div class="container">
+        <div class="text-field d-flex">
+        <h3 class="pb-1 text-uppercase">Product List</h3>
+        </div>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Image</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Category</th>
+                    <th scope="col">Color</th>
+                    <th scope="col">Sale Type</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of productList">
+                    <td class="product_image_td"><img src="{{item.image}}"  class="product_image"></td>
+                    <td style="width: 35%;">{{item.name}}</td>
+                    <td>{{item.price | currency:'INR'}}</td>
+                    <td>{{item.category}}</td>
+                    <td>{{item.color}}</td>
+                    <td>{{item.sale}}</td>
+                    <td><span class="me-4"><a style="color:green" routerLink="/seller-update-product/{{item.id}}"><fa-icon [icon]="faEdit"></fa-icon></a></span> <span style="color:red; cursor: pointer;" class="color-danger" (click)="deleteProduct(item.id)"><fa-icon [icon]="faDelete"></fa-icon></span></td>
+                </tr>
+            </tbody>
+        </table>    
+    </div>
+</div>

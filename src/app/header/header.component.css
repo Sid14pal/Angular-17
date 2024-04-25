@@ -1,0 +1,45 @@
+
+.nav-link{
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #dfdfdf;
+    letter-spacing: 1px;
+}
+
+.search{
+    background: none;
+    border-radius: 0px;
+    color: #fff;
+    font-weight: 200;
+}
+
+.search::placeholder{
+    color: #fff;
+    font-weight: 200;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.search-bar .btn{
+    margin-left: 3px!important;
+    background: #fc5b40;
+    border: #fc5b40;
+}
+
+.search-bar{
+    position: relative;
+    right: 20px;
+}
+
+.badge{
+    background: red;
+    position: absolute;
+    font-size: 14px;
+    text-align: center;
+    padding: 0.3em;
+}
+
+.svg-inline--fa {
+    height: 1.2em !important;
+}

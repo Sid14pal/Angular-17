@@ -1,0 +1,23 @@
+.seller-home-product{
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    background: #fbfbfb;
+}
+
+.product_image_td{
+    width: 10%;
+}
+
+.product_image{
+    width: 50%;
+}
+
+.table > :not(caption) > * > * {
+    vertical-align: middle;
+}
+
+::ng-deep .success{
+    --mdc-snackbar-container-color: green;
+    --mdc-snackbar-supporting-text-color: white;
+    --mat-snack-bar-button-color: #fff;
+}

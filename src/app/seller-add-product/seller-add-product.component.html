@@ -1,0 +1,42 @@
+<div class="seller-add-product">
+    <div class="container">
+        <div class="text-field">
+            <h3 class="text-uppercase">Add Your Product</h3>
+            <span class="text-success">{{productAddMessage}}</span>
+        </div>
+        <form class="product-add" [formGroup]="sellerAddProduct" #addProduct="ngForm" (ngSubmit)="submit(addProduct.value);addProduct.reset()" autocomplete="off">
+            <div class="col-md-12 formGroup">
+                <input class="form-control" type="text" name="name" placeholder="Enter Product Name" ngModel formControlName="name">
+                <span *ngIf="productName && productName.invalid && productName.touched" style="color: red;font-size: 14px;">Enter Product Name***</span>
+            </div>
+            <div class="col-md-12 formGroup">
+                <input class="form-control" type="number" name="price" placeholder="Enter Product Price" ngModel formControlName="price">
+                <span *ngIf="productPrice && productPrice.invalid && productPrice.touched" style="color: red;font-size: 14px;">Enter Product Price***</span>
+            </div>
+            <div class="col-md-12 formGroup">
+                <input class="form-control" type="text" name="color" placeholder="Enter Product Color" ngModel formControlName="color">
+                <span *ngIf="productColor && productColor.invalid && productColor.touched" style="color: red;font-size: 14px;">Enter Product Color***</span>
+            </div>
+            <div class="col-md-12 formGroup">
+                <input class="form-control" type="text" name="category" placeholder="Enter Product Category" ngModel formControlName="category">
+                <span *ngIf="productCategory && productCategory.invalid && productCategory.touched" style="color: red;font-size: 14px;">Enter Product Category***</span>
+            </div>
+
+            <div class="col-md-12 formGroupDescription">
+                <textarea class="form-control" type="text" name="description" placeholder="Enter Product Description" ngModel style="height: 100px;" formControlName="description"></textarea>
+                <span *ngIf="productDescription && productDescription.invalid && productDescription.touched" style="color: red;font-size: 14px;">Enter Product Description***</span>
+            </div>
+            <div class="col-md-12 formGroup">
+                <input class="form-control" type="text" name="image" placeholder="Enter Product Image Url" ngModel formControlName="image">
+                <span *ngIf="productImage && productImage.invalid && productImage.touched" style="color: red;font-size: 14px;">Enter Product Image***</span>
+            </div>
+            <div class="col-md-12 formGroup">
+                <input class="form-control" type="text" name="image" placeholder="Enter Sale Type" ngModel formControlName="sale">
+            </div>
+            <div class="form-button mt-3">
+                <button id="submit" type="submit" class="btn btn-primary btn-custom" [disabled]="sellerAddProduct.invalid">Add Your Products</button>
+            </div>
+
+        </form>
+    </div>
+</div>

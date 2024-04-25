@@ -1,0 +1,66 @@
+<div class="cart-box p-5">
+    <div class="container">
+        <h3 class="text-uppercase">Your Cart</h3>
+       <div class="row">
+        <div class="col-md-9">
+          <table class="table align-middle mb-0 bg-white">
+            <thead class="bg-light">
+              <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of cartItems, let i = index">
+                <td>
+                  <div class="d-flex align-items-center">
+                    <img
+                        src="{{item.image}}"
+                        class="rounded-circle"
+                        alt=""
+                        style="width: 45px; height: 45px"
+                        />
+                    <div class="ms-3">
+                      <p class="fw-bold mb-1">{{item.name}}</p>
+                      <p class="text-muted mb-0">Category: {{item.category}}</p>
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="fw-normal mb-1">{{item.price | currency:"INR"}}</p>
+                </td>
+                <td>{{item.quantity}}</td>
+                <td style="color:red; cursor: pointer;" (click)="deleteItem(i)">
+                  <fa-icon [icon]="faDelete"></fa-icon>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-3">
+          <div class="cart-summary">
+            <h3>Summary</h3>
+
+            <table class="table table-totals">
+              <tfoot>
+                 <tr>
+                  <td>Shipping</td>
+                  <td>$0.00 </td>
+                </tr>
+                <tr>
+                  <td><strong>Order Total</strong></td>
+                 <td><strong>{{totalCartPrice | currency:'INR'}}</strong></td>
+               </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+       </div>
+          <div class="cart-buttons">
+            <button class="clear" (click)="deleteAllItems()">Clear All</button>
+            <button class="btn btn-primary btn-custom" routerLink="/checkout">Proceed To Checkout</button>
+          </div>
+    </div>
+</div>

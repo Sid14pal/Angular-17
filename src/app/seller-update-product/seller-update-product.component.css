@@ -1,0 +1,23 @@
+.seller-update-product{
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    background: #fbfbfb;
+}
+
+.product-add .form-control{
+    height: 45px;
+    border-radius: 0px;
+}
+
+.product-add .form-control::placeholder{
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.formGroup{
+    min-height: 70px;
+}
+
+.formGroupDescription{
+    min-height: 125px;
+}

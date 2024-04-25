@@ -1,0 +1,78 @@
+{
+  "seller": [
+    {
+      "id": "d22a",
+      "name": "Siddhartha Paul",
+      "password": "4321",
+      "email": "siddharthapaul440@gmail.com"
+    },
+    {
+      "id": "f4c5",
+      "name": "Rathindra Nath Paul",
+      "password": "1234",
+      "email": "rathin43@gmail.com"
+    }
+  ],
+  "products": [
+    {
+      "name": "HURRICANE Running Shoes For Men",
+      "price": 50,
+      "color": "White",
+      "category": "Shoe",
+      "description": "Nice Shoe",
+      "image": "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/r/j/e/-original-imagmuc8gfb7heya.jpeg?q=70&crop=false",
+      "sale": "Sale",
+      "id": "b2e3"
+    },
+    {
+      "id": "d6eb",
+      "name": "Portronics Clean M Multifunctional 8-in-1 Gadget Cleaning Kit (White)",
+      "price": 429,
+      "color": "White",
+      "category": "Cleaner",
+      "description": "More than a cleaner: The kit comes with a duster and lotion that can be refilled, to wipe your smartphone/tablet/TV screens.\nThe ultimate cleaning accessory: The 8-in-1 cleaning is just the perfect size to carry in your backpack, purse or pocket.",
+      "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSoXpDF5l2AV7hKRUfI_f6ajuzD4nL1TPBx_qyve5kE2WWRm4d-FLiQtVquTzQN9S15CNy8JOfdiHn7IjvXHRW0ZFA71ELtYRr626lZAAd1yRMttEsPIWVnpsAo",
+      "sale": ""
+    },
+    {
+      "id": "4da7",
+      "name": "ingenious-gadgets Gyro Smart Fidget Spinner Pen with LED, Red Shell Multi-function Pen",
+      "price": 399,
+      "color": "Red",
+      "category": "Pen",
+      "description": "Body Color: Red\nMade of Metal\nSolid Body Type\nPack of 1",
+      "image": "https://rukminim2.flixcart.com/image/416/416/xif0q/pen/j/6/i/ig35y35y5y-ingenious-gadgets-original-imagjzygbzzpwkda.jpeg?q=70&crop=false",
+      "sale": "Sale"
+    },
+    {
+      "id": "066f",
+      "name": "boAt Airdopes 190 True Wireless in Ear Earbuds with Beast Mode(50ms) for Gaming, 40H Playtime",
+      "price": 1199,
+      "color": "White",
+      "category": "Earbuds",
+      "description": "Low Latency- Enjoy a lag less gaming and entertainment experience with BEAST Mode for 50ms low latency so that your sessions always stay smooth.\nPlayback- It offers a total playtime of up to 40HRS, including up to 10HRS of playtime per earbud.\nDrivers- Delve into the boAt immersive auditory experience on Airdopes 190 TWS earbuds courtesy its powerful 10mm audio drivers.\nASAP Charge- Our ASAP Charge feature that lets the earbuds garner up to 180 minutes of playtime in just 10 minutes of charging.\nBluetooth- The Bluetooth v5.3 wireless technology in the earbuds supports a seamless listening experience every time.",
+      "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ2j2_1n-5R7CvcA3TLCUIV1Ar51eeBA_pXAGABJcCRWDP2VCScgZLFuOVSO_J0ai05FWNfyZ2BufHmiTl771Yiy523bDvtigk5oRX_7SGrKNSe4yaiUeiguA",
+      "sale": null
+    },
+    {
+      "id": "90a9",
+      "name": "Tkg Mall Revolving Gadget Orbital Rotating Desk Physics Mechanism Modem Art Tool Stimulate Scientific Simple Installation Toy Living Bedroom",
+      "price": 799,
+      "color": "Black",
+      "category": "Art Tool",
+      "description": "3D Desk Orbital Toy: The Rotating Orbital Is Like A 3D Ball, Moving Smoothly And Swaying From Side To Side, Beautiful Scenery On The Desk. You Can Also Learn The Charm Of Science In This Model.\nStimulate Scientific Interest: Rotating Orbital Has A Simple Twist On The Upper Portion Of The Base Creating A Moving Sphere. You Or Your Children Can Learn Science From This Model, To Stimulate Children'S Interest In Science.",
+      "image": "https://m.media-amazon.com/images/I/51Lo90cZG-L._SX522_.jpg",
+      "sale": null
+    },
+    {
+      "name": "Iphone 15 ",
+      "price": "60000",
+      "color": "Pink",
+      "category": "Mobile",
+      "description": "This is a good phone",
+      "image": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1708671939/Croma%20Assets/Communication/Mobiles/Images/300679_0_ywgnrd.png?tr=w-640",
+      "sale": "Sale",
+      "id": "3d20"
+    }
+  ]
+}

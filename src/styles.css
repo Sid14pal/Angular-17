@@ -1,0 +1,38 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.btn-custom{
+    font-size: 12px;
+    border-radius: 0px;
+    width: auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    height: 40px;
+    background: #fb5b40;
+    border: #fb5b40;
+}
+
+.btn.disabled, .btn:disabled, fieldset:disabled .btn {
+    background-color: #fc5b40;
+    border-color: #fc5b40;
+    cursor: no-drop;
+  }
+
+  .text-field{
+    min-height: 120px;
+    padding-top: 40px;
+}
+.product-add[_ngcontent-ng-c1591296450] .form-control[_ngcontent-ng-c1591296450] {
+    height: 45px;
+    border-radius: 0px;
+}
+.form-control:focus {
+    box-shadow: none;
+}
+
+
