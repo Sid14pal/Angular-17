@@ -1,1 +1,110 @@
-<p>checkout works!</p>
+<div class="checkout-wrap pt-100 pb-75">
+    <div class="container">
+       <div class="row gx-5">
+          <div class="col-xl-7 col-lg-7">
+             <form action="#" class="checkout-form">
+                <div class="row">
+                   <div class="col-lg-12">
+                      <h3 class="checkout-box-title">Billing Details</h3>
+                   </div>
+                   <div class="col-lg-6">
+                      <div class="form-group">
+                         <input type="text" name="fname" id="fname" required="" placeholder="First Name">
+                      </div>
+                   </div>
+                   <div class="col-lg-6">
+                      <div class="form-group">
+                         <input type="text" name="lname" id="lname" required="" placeholder="Last Name">
+                      </div>
+                   </div>
+                   <div class="col-lg-12">
+                      <div class="form-group">
+                         <input type="email" name="email" id="email" required="" placeholder="Email Address">
+                      </div>
+                   </div>
+                   <div class="col-lg-12">
+                      <div class="form-group">
+                         <input type="number" name="phone" id="phone" required="" placeholder="Phone Numnber">
+                      </div>
+                   </div>
+                   <div class="col-lg-12">
+                      <div class="form-group">
+                         <input type="text" name="company_name" id="company_name" placeholder="Company Name">
+                      </div>
+                   </div>
+                   <div class="col-lg-12">
+                      <div class="form-group">
+                         <select name="select_country" id="select_country">
+                            <option>Country</option>
+                            <option value="1">United States</option>
+                            <option value="1">Germany</option>
+                            <option value="1">Russia</option>
+                         </select>
+                      </div>
+                   </div>
+                   <div class="col-lg-12">
+                      <div class="form-group">
+                         <select name="select_country2" id="select_country2">
+                            <option>State</option>
+                            <option value="1">New York</option>
+                            <option value="1">Florida</option>
+                            <option value="1">Los Angels</option>
+                         </select>
+                      </div>
+                   </div>
+                   <div class="col-lg-12">
+                      <div class="form-group">
+                         <select name="select_country3" id="select_country3">
+                            <option>City</option>
+                            <option value="1">New York</option>
+                            <option value="1">Florida</option>
+                            <option value="1">Los Angels</option>
+                         </select>
+                      </div>
+                   </div>
+                   <div class="col-lg-12">
+                      <div class="form-group">
+                         <input type="text" name="street" id="street" placeholder="Street">
+                      </div>
+                   </div>
+                   <div class="col-lg-12">
+                      <div class="form-group">
+                         <input type="text" name="zip" id="zip" required="" placeholder="ZIP Code">
+                      </div>
+                   </div>
+                   <div class="col-lg-12">
+                      <div class="form-group">
+                         <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Order Note"></textarea>
+                      </div>
+                   </div>
+                </div>
+             </form>
+          </div>
+          <div class="col-xl-5 col-lg-5">
+             <div class="checkout-details bg-albastor">
+                <h2 class="checkout-box-title">Checkout Summary</h2>
+                <div class="bill-details">
+                   <div class="bill-item-wrap">
+                      <div class="bill-item" *ngFor="let item of cartItems, let i = index">
+                         <p class="bill-item-name">{{item.name}} <br><span>Qty: {{item.quantity}}</span></p>
+                         <span class="bill-item-price">{{item.price | currency:"INR"}}</span>
+                      </div>
+                      <div class="bill-item">
+                        <p class="bill-item-name">Order Total</p>
+                        <span class="bill-item-price">{{totalCartPrice | currency:'INR'}}</span>
+                     </div>
+                   </div>
+                </div>
+             </div>
+             <div class="shipping-address-area billing-area row">
+                <div class="minicart-btn-area col-md-6">
+                    <button class="checkout-page-btn minicart-btn btn-secondary" routerLink="/cart">BACK TO CART</button>
+                </div>
+                <div class="minicart-btn-area col-md-6">
+                    <a href="" class="btn btn-primary btn-custom">PROCEED TO SHIPPING</a>
+                </div>
+            </div>
+          </div>
+       </div>
+    </div>
+ </div>
