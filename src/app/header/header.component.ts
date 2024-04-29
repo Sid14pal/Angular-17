@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { product } from '../data-type';
 import { faCartShopping, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { RouteStatusService } from '../services/route-status.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -15,7 +16,7 @@ export class HeaderComponent implements OnInit {
   cartItemsCount= 0;
 
 
-  constructor(private route: Router) {}
+  constructor(private route: Router, public routeStatusService: RouteStatusService) {}
 
   ngOnInit(): void {
     this.route.events.subscribe((val: any) => {

@@ -23,6 +23,12 @@ body {
     cursor: no-drop;
   }
 
+  .btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: #5d1408;
+    border-color: #5d1408;  
+}
+
   .text-field{
     min-height: 120px;
     padding-top: 40px;
@@ -34,5 +40,7 @@ body {
 .form-control:focus {
     box-shadow: none;
 }
+
+
 
 
