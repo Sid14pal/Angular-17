@@ -18,8 +18,8 @@ const routes: Routes = [
   },
 
   {
-    path: 'authentication',
-    component: AuthenticationComponent
+    component: SellerAuthComponent,
+    path: 'seller-auth',
   },
 
   {
