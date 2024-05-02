@@ -3,6 +3,8 @@ import { SellerService } from '../services/seller.service';
 import { Router } from '@angular/router';
 import { signUp } from '../data-type';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
+import { RouteStatusService } from '../services/route-status.service';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 
 @Component({
@@ -12,7 +14,9 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 })
 export class SellerAuthComponent {
 
-  constructor(private seller: SellerService, private router: Router) { }
+  constructor(private seller: SellerService, private router: Router, private routeStatusService: RouteStatusService,  private _snackBar: MatSnackBar,) { 
+    this.routeStatusService.hideHeader = true;
+  }
 
   showLogin = false;
   authError:string = '';
@@ -30,9 +34,18 @@ export class SellerAuthComponent {
     this.seller.userLogin(data);
     this.seller.isLoginError.subscribe((isError)=>{
       if(isError){
-        this.authError="Invalid Authentication";
+       this.openSnackBar('Invalid Authentication', 'Close');
       }
     })
+  }
+
+    openSnackBar(message: string, action: string) {
+    this._snackBar.open(message, action, {
+      duration: 3000,
+      horizontalPosition: 'center',
+      verticalPosition: 'top',
+      panelClass: ['danger']  
+    });
   }
 
   openLogin() {

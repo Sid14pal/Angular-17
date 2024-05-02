@@ -10,7 +10,7 @@ export class RouteStatusService {
   constructor(private router: Router) {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationStart) {
-        this.hideHeader = event.url === '/authentication';
+        this.hideHeader = event.url === '/seller-auth';
       }
     });
   }

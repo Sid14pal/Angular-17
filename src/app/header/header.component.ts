@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
 
   constructor(private route: Router, public routeStatusService: RouteStatusService) {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {/* 
     this.route.events.subscribe((val: any) => {
       if (val.url) {
         if (localStorage.getItem('seller') && val.url.includes('seller')) {
@@ -36,7 +36,7 @@ export class HeaderComponent implements OnInit {
           this.menuType = 'default';
         }
       }
-    });
+    }); */
   }
 
   logOut(){

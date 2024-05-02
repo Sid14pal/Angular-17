@@ -9,7 +9,6 @@ import { SellerUpdateProductComponent } from './seller-update-product/seller-upd
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
-import { AuthenticationComponent } from './authentication/authentication.component';
 
 const routes: Routes = [
   {

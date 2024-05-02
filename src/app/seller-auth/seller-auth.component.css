@@ -1,135 +1,91 @@
 
 .form-body{
-  background: #000;
-}
-
-.form-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  text-align: center;
   min-height: 100vh;
+  padding: 30px 15px;
+
 }
 
-.form-holder .form-content {
-position: relative;
-text-align: center;
-display: -webkit-box;
-display: -moz-box;
-display: -ms-flexbox;
-display: -webkit-flex;
-display: flex;
--webkit-justify-content: center;
-justify-content: center;
--webkit-align-items: center;
-align-items: center;
-padding: 60px;
+.mb-3 {
+  height: 55px;
 }
 
-.form-content .form-items {
-  padding: 40px;
-  display: inline-block;
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: 1rem;
+  width: 75%;
+  margin:auto ;
+}
+
+.display-8 {
+  font-size: 1.8rem;
+}
+
+.text-muted {
+  color: #6c757d !important;
+}
+
+.form-control:focus, .swal2-modal .swal2-input:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #ffb7a0;
+  outline: 0;
+  -webkit-box-shadow: 0 0 0 1px #ff6e40;
+  box-shadow: 0 0 0 1px #ff6e40;
+}
+
+.form-control, .swal2-modal .swal2-input {
+  display: block;
   width: 100%;
-  min-width: 540px;
-  text-align: left;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  background: #ffffff42;
-  border-radius: 20px;
+  padding: .675rem 1.25rem;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: .5rem;
+  -webkit-transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
 }
 
-.form-content h3 {
-color: #fff;
-text-align: left;
-font-size: 28px;
-font-weight: 600;
-margin-bottom: 5px;
+.btn-primary {
+  color: #fff !important;
+    background-color: #ff6e40;
+    border-color: #ff6e40;
 }
 
-.form-content h3.form-title {
-margin-bottom: 30px;
+h3.fw-8 {
+  margin-top: 50%;
+  font-size: 26px;
+    font-weight: bold;
 }
 
-.form-content p {
-color: #fff;
-text-align: left;
-font-size: 17px;
-font-weight: 300;
-line-height: 20px;
-margin-bottom: 30px;
+::ng-deep .danger{
+  --mdc-snackbar-container-color: rgb(170, 3, 3);
+  --mdc-snackbar-supporting-text-color: white;
+  --mat-snack-bar-button-color: #fff;
 }
-
-
-.form-content label, .was-validated .form-check-input:invalid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label{
-color: #fff;
-}
-
-.form-content input[type=text], .form-content input[type=password], .form-content input[type=email], .form-content select {
-width: 100%;
-padding: 9px 20px;
-text-align: left;
-border: 0;
-outline: 0;
-border-radius: 6px;
-background-color: #fff;
-font-size: 15px;
-font-weight: 300;
-color: #8D8D8D;
--webkit-transition: all 0.3s ease;
-transition: all 0.3s ease;
-margin-top: 16px;
-}
-
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active{
-background-color: #495056;
-outline: none !important;
-border: none !important;
- box-shadow: none;
-}
-
-.form-content textarea {
-position: static !important;
-width: 100%;
-padding: 8px 20px;
-border-radius: 6px;
-text-align: left;
-background-color: #fff;
-border: 0;
-font-size: 15px;
-font-weight: 300;
-color: #8D8D8D;
-outline: none;
-resize: none;
-height: 120px;
--webkit-transition: none;
-transition: none;
-margin-bottom: 14px;
-}
-
-.form-content textarea:hover, .form-content textarea:focus {
-border: 0;
-background-color: #ebeff8;
-color: #8D8D8D;
-}
-
-.mv-up{
-margin-top: -9px !important;
-margin-bottom: 8px !important;
-}
-
-.invalid-feedback{
-color: #ff606e;
-}
-
-.valid-feedback{
-color: #2acc80;
-}
-
-.toggle{
-  cursor: pointer;
-    text-decoration: none;
-    color: #fb5b40;
-    font-weight: 600;
-}
-

@@ -23,7 +23,6 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { HeaderComponent } from './header/header.component';
-import { AuthenticationComponent } from './authentication/authentication.component';
 
 
 @NgModule({
@@ -43,7 +42,6 @@ import { AuthenticationComponent } from './authentication/authentication.compone
     CartComponent,
     CheckoutComponent,
     HeaderComponent,
-    AuthenticationComponent,
   ],
   imports: [
     BrowserModule,
