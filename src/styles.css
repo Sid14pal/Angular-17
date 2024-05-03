@@ -7,6 +7,12 @@ body {
     overflow-x: hidden;
 }
 
+.btn-primary {
+    color: #fff !important;
+    background-color: #ff6e40;
+    border-color: #ff6e40;
+}
+
 .display-7 {
     font-size: 2rem;
 }
@@ -4302,4 +4308,35 @@ blockquote * {
 .bg-skype {
     background: #00aff0;
     color: #fff
+}
+
+.text-orange {
+    color: #fd7e14 !important;
+}
+
+.text-indigo {
+    color: #6610f2 !important;
+}
+
+.text-cyan {
+    color: #0dcaf0 !important;
+}
+
+.btn-outline-primary {
+    color: #ff6e40 !important;
+    border-color: #ff6e40;
+}
+
+.btn-outline-primary:hover {
+    color: #fff !important;
+    background-color: #ff6e40;
+    border-color: #ff6e40;
+}
+
+h5.my-3 {
+    font-size: 1.09375rem;
+}
+
+fa-icon.ng-fa-icon.text-secondary {
+    font-size: 0.8em;
 }

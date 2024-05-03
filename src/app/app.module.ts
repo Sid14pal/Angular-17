@@ -24,6 +24,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { CheckoutComponent } from './checkout/checkout.component';
 import { HeaderComponent } from './header/header.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardSidebarComponent } from './dashboard/dashboard-sidebar/dashboard-sidebar.component';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     CheckoutComponent,
     HeaderComponent,
     DashboardComponent,
+    DashboardSidebarComponent,
   ],
   imports: [
     BrowserModule,
