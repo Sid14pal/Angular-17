@@ -17,14 +17,14 @@ export class SellerService {
     let result = this.http.post('http://localhost:3000/seller', data, { observe: "response" }).subscribe((result) => {
       this.IsSellerLoggedIn.next(true);
       localStorage.setItem('seller', JSON.stringify(result.body))
-      this.router.navigate(['seller-home']);
+      this.router.navigate(['dashboard']);
     });
   }
 
   reloadSeller() {
     if (localStorage.getItem('seller')) {
       this.IsSellerLoggedIn.next(true);
-      this.router.navigate(['seller-home']);
+      this.router.navigate(['dashboard']);
     }
   }
 
@@ -34,7 +34,7 @@ export class SellerService {
      console.warn(result)
      if(result && result.body && result.body.length===1){
        localStorage.setItem('seller', JSON.stringify(result.body))
-      this.router.navigate(['seller-home']);
+      this.router.navigate(['dashboard']);
      }else{
       this.isLoginError.emit(true);
      }

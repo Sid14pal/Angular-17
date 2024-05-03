@@ -1,23 +1,133 @@
 {
   "seller": [
     {
-      "id": "9bcb",
+      "id": "f828",
+      "name": "demo",
+      "password": "1234",
+      "email": "demo@gmail.com"
+    },
+    {
+      "id": "95ad",
       "name": "test",
       "password": "1234",
-      "email": "test@gmail.com"
+      "email": "test11@codeclouds.com"
+    },
+    {
+      "id": "6bfb",
+      "name": "test",
+      "password": "1234",
+      "email": "test11@codeclouds.com"
+    },
+    {
+      "id": "1052",
+      "name": "test",
+      "password": "1234",
+      "email": "test11@codeclouds.com"
+    },
+    {
+      "id": "a1cb",
+      "name": "test",
+      "password": "1234",
+      "email": "test11@codeclouds.com"
+    },
+    {
+      "id": "6a5a",
+      "name": "test",
+      "password": "1234",
+      "email": "test11@codeclouds.com"
+    },
+    {
+      "id": "71eb",
+      "name": "test",
+      "password": "1234",
+      "email": "test11@codeclouds.com"
+    },
+    {
+      "id": "595f",
+      "name": "test",
+      "password": "1234",
+      "email": "test11@codeclouds.com"
+    },
+    {
+      "id": "6741",
+      "name": "test",
+      "password": "1234",
+      "email": "test11@codeclouds.com"
+    },
+    {
+      "id": "e163",
+      "name": "test",
+      "password": "1234",
+      "email": "test11@codeclouds.com"
+    },
+    {
+      "id": "a0b5",
+      "name": "test",
+      "password": "1234",
+      "email": "test11@codeclouds.com"
+    },
+    {
+      "id": "6d66",
+      "name": "test",
+      "password": "1234",
+      "email": "test11@codeclouds.com"
+    },
+    {
+      "id": "8bcb",
+      "name": "test",
+      "password": "1234",
+      "email": "test11@codeclouds.com"
+    },
+    {
+      "id": "6d08",
+      "name": "test",
+      "password": "1234",
+      "email": "test11@codeclouds.com"
+    },
+    {
+      "id": "9343",
+      "name": "test",
+      "password": "1234",
+      "email": "test11@codeclouds.com"
+    },
+    {
+      "id": "52dc",
+      "name": "test",
+      "password": "1234",
+      "email": "test11@codeclouds.com"
+    },
+    {
+      "id": "d9d4",
+      "name": "test",
+      "password": "1234",
+      "email": "test11@codeclouds.com"
+    },
+    {
+      "id": "0aeb",
+      "name": "test",
+      "password": "1234",
+      "email": "test11@codeclouds.com"
+    },
+    {
+      "id": "a6de",
+      "name": "test",
+      "password": "1234",
+      "email": "test11@codeclouds.com"
+    },
+    {
+      "id": "ea47",
+      "name": "test",
+      "password": "1234",
+      "email": "test11@codeclouds.com"
+    },
+    {
+      "id": "b3aa",
+      "name": "test",
+      "password": "1234",
+      "email": "test11@codeclouds.com"
     }
   ],
   "products": [
-    {
-      "name": "HURRICANE Running Shoes For Men",
-      "price": 50,
-      "color": "White",
-      "category": "Shoe",
-      "description": "Nice Shoe",
-      "image": "https://rukminim2.flixcart.com/image/832/832/xif0q/shoe/r/j/e/-original-imagmuc8gfb7heya.jpeg?q=70&crop=false",
-      "sale": "Sale",
-      "id": "b2e3"
-    },
     {
       "id": "d6eb",
       "name": "Portronics Clean M Multifunctional 8-in-1 Gadget Cleaning Kit (White)",

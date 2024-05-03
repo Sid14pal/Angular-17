@@ -23,6 +23,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { HeaderComponent } from './header/header.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { HeaderComponent } from './header/header.component';
     CartComponent,
     CheckoutComponent,
     HeaderComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,

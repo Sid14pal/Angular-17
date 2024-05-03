@@ -9,6 +9,7 @@ import { SellerUpdateProductComponent } from './seller-update-product/seller-upd
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,12 @@ const routes: Routes = [
   },
 
   {
+    path: 'dashboard',
+    component: DashboardComponent,
+    canActivate: [AuthGuard]
+  },
+
+  {
     path: 'seller-home',
     component: SellerHomeComponent,
     canActivate: [AuthGuard]
@@ -41,7 +48,6 @@ const routes: Routes = [
   {
     path: 'seller-update-product/:id',
     component: SellerUpdateProductComponent,
-    canActivate: [AuthGuard]
   },
 
   {
