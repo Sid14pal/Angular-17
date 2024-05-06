@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faArrowAltCircleRight} from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -8,6 +9,7 @@ import { Component } from '@angular/core';
 })
 export class DashboardSidebarComponent {
 
+  faArrowAltCircleRight = faArrowAltCircleRight;
   
 
 }
