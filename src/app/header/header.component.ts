@@ -8,7 +8,7 @@ import { RouteStatusService } from '../services/route-status.service';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent  {
   menuType: string = 'default';
   sellerName:string="";
   faCart= faCartShopping;
@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
 
   constructor(private route: Router, public routeStatusService: RouteStatusService) {}
 
-  ngOnInit(): void {/* 
+  ngOnInit(): void {
     this.route.events.subscribe((val: any) => {
       if (val.url) {
         if (localStorage.getItem('seller') && val.url.includes('seller')) {
@@ -27,16 +27,8 @@ export class HeaderComponent implements OnInit {
          this.sellerName=sellerData.name;
           this.menuType = 'seller';
         }
-        else if(localStorage.getItem('user')){
-          let userStore = localStorage.getItem('user');
-          let userData = userStore && JSON.parse(userStore);
-          this.menuType='user';
-        }
-         else {
-          this.menuType = 'default';
-        }
       }
-    }); */
+    });
   }
 
   logOut(){

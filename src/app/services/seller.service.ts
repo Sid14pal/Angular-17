@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class SellerService {
   IsSellerLoggedIn = new BehaviorSubject<boolean>(false);
   isLoginError= new EventEmitter<boolean>(false);
+  sellerData: any;
 
   constructor(private http: HttpClient, private router: Router) { }
 

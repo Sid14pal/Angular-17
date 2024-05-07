@@ -197,7 +197,8 @@ body {
 }
 
 .dropdown-menu .dropdown-item {
-    padding: 8px 25px
+    padding: 8px 11px;
+    font-size: 15px;
 }
 
 .dropdown-menu .dropdown-item:active,
@@ -1131,7 +1132,8 @@ table.dataTable thead .sorting_desc:before {
 
 .card table.table-custom tbody tr td {
     border-top: 1px solid rgba(0, 0, 0, .125);
-    border-bottom: 1px solid rgba(0, 0, 0, .125)
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    font-size: 14px;
 }
 
 .card table.table-custom tbody tr td:first-child {
@@ -4339,4 +4341,8 @@ h5.my-3 {
 
 fa-icon.ng-fa-icon.text-secondary {
     font-size: 0.8em;
+}
+
+.small-icons{
+    font-size: 18px;
 }

@@ -11,6 +11,18 @@
       "name": "test",
       "password": "1234",
       "email": "test11@codeclouds.com"
+    },
+    {
+      "id": "7433",
+      "name": "test",
+      "password": "123",
+      "email": "test3@gmail.com"
+    },
+    {
+      "id": "a6ee",
+      "name": "test",
+      "password": "1234",
+      "email": "test@gmail.com"
     }
   ],
   "products": [

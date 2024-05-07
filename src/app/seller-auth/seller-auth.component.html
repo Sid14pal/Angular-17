@@ -14,15 +14,15 @@
                             </div>
                             <form class="mb-5"  [formGroup]="signUpForm" #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)">
                                 <div class="mb-3">
-                                    <input type="text" class="form-control" placeholder="Enter Your Name" autofocus=""  ngModel formControlName="name">
+                                    <input type="text" class="form-control" placeholder="Enter Your Name" name="name" autofocus=""  ngModel formControlName="name">
                                     <span *ngIf="user && user.invalid && user.touched" style="color: red; font-size: 12px;">Enter Your Name***</span>
                                 </div>
                                 <div class="mb-3">
-                                    <input type="email" class="form-control" placeholder="Enter email" ngModel formControlName="email">
+                                    <input type="email" class="form-control" placeholder="Enter email"  name="email" ngModel formControlName="email">
                                     <span *ngIf="email && email.invalid && email.touched" style="color: red; font-size: 12px;">Enter Your Valid Email***</span>
                                 </div>
                                 <div class="mb-3">
-                                    <input type="password" class="form-control" placeholder="Enter password" ngModel formControlName="password">
+                                    <input type="password" class="form-control" placeholder="Enter password" name="password" formControlName="password">
                                     <span *ngIf="password && password.invalid && password.touched" style="color: red; font-size: 12px;">Enter Your Password***</span>
                                 </div>
                                 <div class="text-center text-lg-start">
