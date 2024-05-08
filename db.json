@@ -1,28 +1,40 @@
 {
   "seller": [
     {
-      "id": "f828",
-      "name": "demo",
+      "id": "aabb",
+      "name": "Suparna Das",
       "password": "1234",
-      "email": "demo@gmail.com"
+      "email": "suparna43@gmail.com"
     },
     {
-      "id": "91aa",
-      "name": "test",
+      "id": "9db1",
+      "name": "rajib Das",
+      "password": "1234",
+      "email": "rajib32@gmail.com"
+    },
+    {
+      "id": "4142",
+      "name": "Siddhartha",
+      "password": "1",
+      "email": "test11@codeclouds.com"
+    },
+    {
+      "id": "b51b",
+      "name": "souvik das",
       "password": "1234",
       "email": "test11@codeclouds.com"
     },
     {
-      "id": "7433",
-      "name": "test",
-      "password": "123",
-      "email": "test3@gmail.com"
+      "id": "7174",
+      "name": "kaustav dutta",
+      "password": "1234",
+      "email": "test11@codeclouds.com"
     },
     {
-      "id": "a6ee",
-      "name": "test",
+      "id": "8cd6",
+      "name": "test test",
       "password": "1234",
-      "email": "test@gmail.com"
+      "email": "test11@codeclouds.in"
     }
   ],
   "products": [

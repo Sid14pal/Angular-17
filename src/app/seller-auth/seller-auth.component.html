@@ -62,7 +62,6 @@
                                 <p class="text-muted">Sign in to Ecommerce to continue</p>
                             </div>
                             <form class="mb-5"  #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)">
-                                <p class="text-danger">{{authError}}</p>
                                 <div class="mb-3">
                                     <input type="email" class="form-control" name="email" placeholder="Enter email" ngModel>
                                 </div>

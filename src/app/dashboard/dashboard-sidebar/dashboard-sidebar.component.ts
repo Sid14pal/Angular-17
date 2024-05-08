@@ -9,7 +9,7 @@ import { SellerService } from '../../services/seller.service';
   templateUrl: './dashboard-sidebar.component.html',
   styleUrl: './dashboard-sidebar.component.css'
 })
-export class DashboardSidebarComponent implements OnInit{
+export class DashboardSidebarComponent{
   sellerName:string="";
   faArrowAltCircleRight = faArrowAltCircleRight;
   faChartBar = faChartBar;
@@ -21,25 +21,9 @@ export class DashboardSidebarComponent implements OnInit{
   faChevronDown = faChevronDown;
   faRightFromBracket = faRightFromBracket;
 
-  constructor(private route: Router, private sellerService: SellerService) {
-    
-  }
+  constructor(private route: Router, private sellerService: SellerService) {}
 
-  ngOnInit(): void {
-    this.route.events.subscribe((val: any) => {
-      if (val.url) {
-        if (localStorage.getItem('seller') && val.url.includes('seller')) {
-         let sellerStore=localStorage.getItem('seller');
-         let sellerData =sellerStore && JSON.parse(sellerStore)[0];
-         this.sellerName=sellerData.name;
-         console.log(1234); // Add this line for debug
-        }
-      }
-    });
-  }
-
-
-
+  
 
 
   logOut(){
