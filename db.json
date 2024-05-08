@@ -35,6 +35,12 @@
       "name": "test test",
       "password": "1234",
       "email": "test11@codeclouds.in"
+    },
+    {
+      "id": "bbf3",
+      "name": "okokowfk",
+      "password": "1",
+      "email": "test11@codeclouds.com"
     }
   ],
   "products": [
