@@ -1,0 +1,349 @@
+<app-dashboard-sidebar></app-dashboard-sidebar>
+
+
+<div class="layout-wrapper">
+
+    <!-- header -->
+    <div class="header">
+    <div class="menu-toggle-btn"> <!-- Menu close button for mobile devices -->
+        <a href="#">
+            <i class="bi bi-list"></i>
+        </a>
+    </div>
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+        <img width="100" src="../../assets/images/logo.svg" alt="logo">
+    </a>
+    <!-- ./ Logo -->
+    <div class="page-title">Products</div>
+    <form class="search-form">
+        <div class="input-group">
+            <button class="btn btn-outline-light" type="button" id="button-addon1">
+                <i class="bi bi-search"></i>
+            </button>
+            <input type="text" class="form-control" placeholder="Search..."
+                   aria-label="Example text with button addon" aria-describedby="button-addon1">
+            <a href="#" class="btn btn-outline-light close-header-search-bar">
+                <i class="bi bi-x"></i>
+            </a>
+        </div>
+    </form>
+    <div class="header-bar ms-auto">
+        <ul class="navbar-nav justify-content-end">
+            <li class="nav-item">
+                <a href="#" class="nav-link nav-link-notify" data-count="2" data-sidebar-target="#notifications">
+                    <i class="bi bi-bell icon-lg"></i>
+                </a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link nav-link-notify" data-count="3" data-bs-toggle="dropdown">
+                    <i class="bi bi-cart2 icon-lg"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0">
+                    <h6 class="m-0 px-4 py-3 border-bottom">Shopping Cart</h6>
+                    <div class="dropdown-menu-body">
+                        <div class="list-group list-group-flush">
+                            <div class="list-group-item d-flex align-items-center">
+                                <a href="#" class="text-danger me-3" title="Remove">
+                                    <i class="bi bi-trash"></i>
+                                </a>
+                                <a href="#" class="me-3 flex-shrink-0 ">
+                                    <img src="../../assets/images/products/3.jpg" class="rounded" width="60"
+                                         alt="...">
+                                </a>
+                                <div>
+                                    <h6>Digital clock</h6>
+                                    <div>1 x $1.190,90</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group list-group-flush">
+                            <div class="list-group-item d-flex align-items-center">
+                                <a href="#" class="text-danger me-3" title="Remove">
+                                    <i class="bi bi-trash"></i>
+                                </a>
+                                <a href="#" class="me-3 flex-shrink-0 ">
+                                    <img src="../../assets/images/products/4.jpg" class="rounded" width="60"
+                                         alt="...">
+                                </a>
+                                <div>
+                                    <h6>Toy Car</h6>
+                                    <div>1 x $139.58</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group list-group-flush">
+                            <div class="list-group-item d-flex align-items-center">
+                                <a href="#" class="text-danger me-3" title="Remove">
+                                    <i class="bi bi-trash"></i>
+                                </a>
+                                <a href="#" class="me-3 flex-shrink-0 ">
+                                    <img src="../../assets/images/products/5.jpg" class="rounded" width="60"
+                                         alt="...">
+                                </a>
+                                <div>
+                                    <h6>Sunglasses</h6>
+                                    <div>2 x $50,90</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-group list-group-flush">
+                            <div class="list-group-item d-flex align-items-center">
+                                <a href="#" class="text-danger me-3" title="Remove">
+                                    <i class="bi bi-trash"></i>
+                                </a>
+                                <a href="#" class="me-3 flex-shrink-0 ">
+                                    <img src="../../assets/images/products/6.jpg" class="rounded" width="60"
+                                         alt="...">
+                                </a>
+                                <div>
+                                    <h6>Cake</h6>
+                                    <div>1 x $10,50</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="m-0 px-4 py-3 border-top small">Sub Total : <strong
+                            class="text-primary">$1.442,78</strong></h6>
+                </div>
+            </li>
+            <li class="nav-item ms-3">
+                    <button class="btn btn-primary btn-icon">
+        <i class="bi bi-plus-circle"></i> Add Product
+    </button>
+            </li>
+        </ul>
+    </div>
+    <!-- Header mobile buttons -->
+    <div class="header-mobile-buttons">
+        <a href="#" class="search-bar-btn">
+            <i class="bi bi-search"></i>
+        </a>
+        <a href="#" class="actions-btn">
+            <i class="bi bi-three-dots"></i>
+        </a>
+    </div>
+    <!-- ./ Header mobile buttons -->
+</div>
+    <!-- ./ header -->
+
+    <!-- content -->
+    <div class="content ">
+        
+    <div class="mb-4">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <a routerLink="/dashboard">Dashboard
+                    </a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Products</li>
+            </ol>
+        </nav>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-md-flex gap-4 align-items-center">
+                        <div class="d-md-flex gap-4 align-items-center">
+                            <form class="mb-3 mb-md-0">
+                            </form>
+                        </div>
+                        <div class="dropdown ms-auto">
+                            <a href="#" data-bs-toggle="dropdown"
+                               class="btn btn-primary dropdown-toggle"
+                               aria-haspopup="true" aria-expanded="false">Actions</a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a href="#" class="dropdown-item">Remove All</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-custom table-lg mb-0" id="products">
+                    <thead>
+                    <tr>
+                        <th>
+                            <input class="form-check-input select-all" type="checkbox"
+                                   data-select-all-target="#products" id="defaultCheck1">
+                        </th>
+                        <th>Photo</th>
+                        <th>Name</th>
+                        <th>Stock</th>
+                        <th>Price</th>
+                        <th>Color</th>
+                        <th>Category</th>
+                        <th class="text-end">Actions</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let item of productList">
+                        <td>
+                            <input class="form-check-input" type="checkbox">
+                        </td>
+                        <td>
+                            <a href="#">
+                                <img src="{{item.image}}" class="rounded" width="40" alt="...">
+                            </a>
+                        </td>
+                        <td>{{item.name}}</td>
+                        <td>
+                            <span class="text-success"><td></td></span>
+                        </td>
+                        <td>{{item.price | currency:'INR'}}</td>
+                        <td>{{item.color}}</td>
+                        <td>{{item.category}}</td>
+                        <td class="text-end">
+                            <div class="d-flex">
+                                <div class="dropdown ms-auto">
+                                    <a href="#" data-bs-toggle="dropdown"
+                                       class="btn btn-floating"
+                                       aria-haspopup="true" aria-expanded="false">
+                                        <i class="bi bi-three-dots"></i>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-end">
+                                        <a href="#" class="dropdown-item">Action</a>
+                                        <a href="#" class="dropdown-item">Another action</a>
+                                        <a href="#" class="dropdown-item">Something else here</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <nav class="mt-4" aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-md-4">
+            <h5 class="mb-4">Filter Products</h5>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                         aria-expanded="true" data-bs-target="#keywordsCollapseExample" role="button">
+                        <div>Keywords</div>
+                        <div class="bi bi-chevron-down"></div>
+                    </div>
+                    <div class="collapse show mt-4" id="keywordsCollapseExample">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Phone, Headphone, Shoe ...">
+                            <button class="btn btn-outline-light" type="button">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                         aria-expanded="true" data-bs-target="#categoriesCollapseExample" role="button">
+                        <div>Categories</div>
+                        <div class="bi bi-chevron-down"></div>
+                    </div>
+                    <div class="collapse show mt-4" id="categoriesCollapseExample">
+                        <div class="d-flex flex-column gap-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="categoryCheck1">
+                                <label class="form-check-label" for="categoryCheck1">
+                                    All
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="categoryCheck2">
+                                <label class="form-check-label" for="categoryCheck2">
+                                    Accessories
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="categoryCheck3">
+                                <label class="form-check-label" for="categoryCheck3">
+                                    Phone
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="categoryCheck4">
+                                <label class="form-check-label" for="categoryCheck4">
+                                    Headphone
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="categoryCheck5">
+                                <label class="form-check-label" for="categoryCheck5">
+                                    Camera
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                         aria-expanded="true" data-bs-target="#priceCollapseExample" role="button">
+                        <div>Price</div>
+                        <div class="bi bi-chevron-down"></div>
+                    </div>
+                    <div class="collapse show mt-4" id="priceCollapseExample">
+                        <input id="price-filter"/>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center" data-bs-toggle="collapse"
+                         aria-expanded="true" data-bs-target="#colorsCollapseExample" role="button">
+                        <div>Colors</div>
+                        <div class="bi bi-chevron-down"></div>
+                    </div>
+                    <div class="collapse show mt-4" id="colorsCollapseExample">
+                        <div class="color-filter-group d-flex gap-3">
+                            <input class="form-check-input" type="checkbox" value="#1fa0c6" aria-label="...">
+                            <input class="form-check-input" type="checkbox" checked value="green" aria-label="...">
+                            <input class="form-check-input" type="checkbox" checked value="#c61faa" aria-label="...">
+                            <input class="form-check-input" type="checkbox" value="#1fc662" aria-label="...">
+                            <input class="form-check-input" type="checkbox" value="#9dc61f" aria-label="...">
+                            <input class="form-check-input" type="checkbox" checked value="#c67b1f" aria-label="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <!-- ./ content -->
+
+    <!-- content-footer -->
+    <footer class="content-footer">
+        <div>© 2021 Vetra - <a href="https://laborasyon.com" target="_blank">Laborasyon</a></div>
+        <div>
+            <nav class="nav gap-4">
+                <a href="https://themeforest.net/licenses/standard" class="nav-link">Licenses</a>
+                <a href="#" class="nav-link">Change Log</a>
+                <a href="#" class="nav-link">Get Help</a>
+            </nav>
+        </div>
+    </footer>
+    <!-- ./ content-footer -->
+
+</div>

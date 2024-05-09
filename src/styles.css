@@ -1064,10 +1064,6 @@ table.dataTable thead .sorting_desc:before {
     margin-top: 0
 }
 
-.table.table-lg td {
-    padding: 1.3rem .75rem
-}
-
 .table.table-borderless td {
     padding-left: 0;
     padding-right: 0
@@ -1096,7 +1092,8 @@ table.dataTable thead .sorting_desc:before {
 
 .table.table-custom tbody tr td {
     border-top: 1px solid transparent;
-    border-bottom: 1px solid transparent
+    border-bottom: 1px solid transparent;
+    font-size: 15px;
 }
 
 .table.table-custom tbody tr td:first-child {
@@ -4346,4 +4343,8 @@ fa-icon.ng-fa-icon.text-secondary {
 
 .small-icons{
     font-size: 18px;
+}
+
+.item-action-buttons{
+    display: none !important;
 }

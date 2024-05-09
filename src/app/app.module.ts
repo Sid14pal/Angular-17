@@ -25,6 +25,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { HeaderComponent } from './header/header.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardSidebarComponent } from './dashboard/dashboard-sidebar/dashboard-sidebar.component';
+import { ProductlistComponent } from './dashboard/productlist/productlist.component';
 
 
 @NgModule({
@@ -46,6 +47,7 @@ import { DashboardSidebarComponent } from './dashboard/dashboard-sidebar/dashboa
     HeaderComponent,
     DashboardComponent,
     DashboardSidebarComponent,
+    ProductlistComponent,
   ],
   imports: [
     BrowserModule,

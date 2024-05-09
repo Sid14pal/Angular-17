@@ -9,8 +9,7 @@ import { SellerService } from '../../services/seller.service';
   templateUrl: './dashboard-sidebar.component.html',
   styleUrl: './dashboard-sidebar.component.css'
 })
-export class DashboardSidebarComponent implements OnInit{
-  sellerName:string="";
+export class DashboardSidebarComponent{
   faArrowAltCircleRight = faArrowAltCircleRight;
   faChartBar = faChartBar;
   faListCheck = faNoteSticky;
@@ -23,24 +22,7 @@ export class DashboardSidebarComponent implements OnInit{
 
   constructor(private route: Router, private sellerService: SellerService) {}
 
-  ngOnInit(): void {
-    if (this.sellerService.IsSellerLoggedIn.value) {
-      this.loadSellerData();
-    }
-    this.sellerService.IsSellerLoggedIn.subscribe((isLoggedIn: boolean) => {
-      if (isLoggedIn) {
-        this.loadSellerData();
-      } else {
-        this.sellerName = "";
-      }
-    });
-  }
-
-  // Function to load seller data
-  private loadSellerData(): void {
-    const seller = JSON.parse(localStorage.getItem('seller') || '{}');
-    this.sellerName = seller.name || ""; // Ensure a fallback value if seller name is not available
-  }
+ 
 
 
   logOut(){
