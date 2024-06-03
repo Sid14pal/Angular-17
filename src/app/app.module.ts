@@ -26,6 +26,8 @@ import { HeaderComponent } from './header/header.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardSidebarComponent } from './dashboard/dashboard-sidebar/dashboard-sidebar.component';
 import { ProductlistComponent } from './dashboard/productlist/productlist.component';
+import { AddProductComponent } from './dashboard/add-product/add-product.component';
+import { DashboardHeaderComponent } from './dashboard/dashboard-header/dashboard-header.component';
 
 
 @NgModule({
@@ -48,6 +50,8 @@ import { ProductlistComponent } from './dashboard/productlist/productlist.compon
     DashboardComponent,
     DashboardSidebarComponent,
     ProductlistComponent,
+    AddProductComponent,
+    DashboardHeaderComponent,
   ],
   imports: [
     BrowserModule,

@@ -11,6 +11,7 @@ import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProductlistComponent } from './dashboard/productlist/productlist.component';
+import { AddProductComponent } from './dashboard/add-product/add-product.component';
 
 const routes: Routes = [
   {
@@ -65,6 +66,11 @@ const routes: Routes = [
   {
     path: 'checkout',
     component: CheckoutComponent,
+  },
+
+  {
+    path: 'add-product',
+    component: AddProductComponent,
   }
 ];
 

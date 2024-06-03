@@ -1,0 +1,117 @@
+<app-dashboard-sidebar></app-dashboard-sidebar>
+<div class="layout-wrapper">
+  <app-dashboard-header></app-dashboard-header>
+   <!-- content -->
+  <form [formGroup]="sellerAddProduct" #addProduct="ngForm" (ngSubmit)="submit(addProduct.value);addProduct.reset()">
+   <div class="content">
+      <div class="mb-4">
+         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+               <li class="breadcrumb-item">
+                  <a routerLink="/dashboard">Dashboard
+                  </a>
+               </li>
+               <li class="breadcrumb-item active" aria-current="page">Add Product</li>
+            </ol>
+         </nav>
+      </div>
+      <div class="col-md-10">
+         <div class="row">
+             <div class="col-md-9">
+                <h2 class="mb-2">Add a product</h2>
+                <h5 class="text-body-tertiary fw-semibold">Orders placed across your store</h5>
+             </div>
+             <div class="col-md-3">
+                <button type="submit" class="btn btn-primary btn-icon mx-4 mt-4" [disabled]="sellerAddProduct.invalid"><fa-icon [icon]="faGlobe"></fa-icon>&nbsp; Publish Product</button>
+             </div>
+          </div>
+       </div>
+    
+         <div class="row g-5">
+            <div class="col-12 col-xl-10">
+               <h4 class="mb-3">Product Title</h4>
+               <input class="form-control mb-3" name="name" type="text" placeholder="Write title here..." ngModel formControlName="name">
+               <span *ngIf="productName && productName.invalid && productName.touched" style="color: red;font-size: 14px;">Enter Product Name***</span>
+               <div class="mb-6">
+                  <h4 class="mb-3"> Product Description</h4>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="description" placeholder="Enter Your Description" ngModel formControlName="description"></textarea>
+                  <span *ngIf="productDescription && productDescription.invalid && productDescription.touched" style="color: red;font-size: 14px;">Enter Product Description***</span>
+               </div>
+               <h4 class="mb-3">Display images</h4>
+               <input class="form-control mb-3" type="text" name="image" placeholder="Enter Product Image URL" ngModel formControlName="image">
+               <span *ngIf="productImage && productImage.invalid && productImage.touched" style="color: red;font-size: 14px;">Enter Product Image URL***</span>
+               <h4 class="mb-3">Inventory</h4>
+               <div class="row g-0 border-top border-bottom">
+                  <div class="col-sm-4">
+                     <div class="nav flex-sm-column border-bottom border-bottom-sm-0 border-end-sm fs-9 vertical-tab h-100 justify-content-between" role="tablist" aria-orientation="vertical">
+                        <a class="nav-link border-end border-end-sm-0 border-bottom-sm text-center text-sm-start cursor-pointer outline-none d-sm-flex align-items-sm-center active" id="pricingTab" data-bs-toggle="tab" data-bs-target="#pricingTabContent" role="tab" aria-controls="pricingTabContent" aria-selected="true">
+                           <span class="d-none d-sm-inline">Pricing</span>
+                        </a>
+                        <a class="nav-link border-end border-end-sm-0 border-bottom-sm text-center text-sm-start cursor-pointer outline-none d-sm-flex align-items-sm-center" id="productsTab" data-bs-toggle="tab" data-bs-target="#productsTabContent" role="tab" aria-controls="productsTabContent" aria-selected="false" tabindex="-1">
+                           <span class="d-none d-sm-inline">Product Color</span>
+                        </a>
+                        <a class="nav-link border-end border-end-sm-0 border-bottom-sm text-center text-sm-start cursor-pointer outline-none d-sm-flex align-items-sm-center" id="attributesTab" data-bs-toggle="tab" data-bs-target="#attributesTabContent" role="tab" aria-controls="attributesTabContent" aria-selected="false" tabindex="-1">
+                           <span class="d-none d-sm-inline">Categories</span>
+                        </a>
+                        <a class="nav-link text-center text-sm-start cursor-pointer outline-none d-sm-flex align-items-sm-center" id="advancedTab" data-bs-toggle="tab" data-bs-target="#advancedTabContent" role="tab" aria-controls="advancedTabContent" aria-selected="false" tabindex="-1">
+                           <span class="d-none d-sm-inline">Sale Type</span>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="col-sm-8">
+                     <div class="tab-content py-3 ps-sm-4 h-100">
+                        <div class="tab-pane fade show active" id="pricingTabContent" role="tabpanel" aria-labelledby="pricingTab">
+                           <h4 class="mb-3 d-sm-none">Pricing</h4>
+                           <div class="row g-3">
+                              <div class="col-12 col-lg-6">
+                                 <h5 class="mb-2 text-body-highlight">Regular price</h5>
+                                 <input class="form-control" type="text" placeholder="$$$" name="price" ngModel formControlName="price">
+                                 <span *ngIf="productPrice && productPrice.invalid && productPrice.touched" style="color: red;font-size: 14px;">Enter Product Price***</span>
+                              </div>
+                              <div class="col-12 col-lg-6">
+                                 <h5 class="mb-2 text-body-highlight">Sale price</h5>
+                                 <input class="form-control" type="text" placeholder="$$$">
+                              </div>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="productsTabContent" role="tabpanel" aria-labelledby="productsTab">
+                           <h5 class="mb-3 text-body-highlight">Enter Product Color</h5>
+                           <div class="mb-3">
+                               <div class="row g-3">
+                                   <div class="col-12 col-lg-6">
+                                      <input class="form-control" type="text" placeholder="Enter here" name="color" ngModel formControlName="color">
+                                      <span *ngIf="productColor && productColor.invalid && productColor.touched" style="color: red;font-size: 14px;">Enter Product Color***</span>
+                                   </div>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="attributesTabContent" role="tabpanel" aria-labelledby="attributesTab">
+                           <h5 class="mb-3 text-body-highlight">Enter Product Category</h5>
+                           <div class="mb-3">
+                               <div class="row g-3">
+                                   <div class="col-12 col-lg-6">
+                                      <input class="form-control" type="text" placeholder="Enter here" name="category" ngModel formControlName="category">
+                                      <span *ngIf="productCategory && productCategory.invalid && productCategory.touched" style="color: red;font-size: 14px;">Enter Product Category***</span>
+                                   </div>
+                                </div>
+                           </div>
+                        </div>
+                        <div class="tab-pane fade" id="advancedTabContent" role="tabpanel" aria-labelledby="advancedTab">
+                           <h5 class="mb-3 text-body-highlight">Enter Sale Type</h5>
+                           <div class="mb-3">
+                               <div class="row g-3">
+                                   <div class="col-12 col-lg-6">
+                                      <input class="form-control" type="text" placeholder="Enter here" ngModel formControlName="sale">
+                                   </div>
+                                </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+   </div>
+  </form>
+   <!-- ./ content -->
+</div>

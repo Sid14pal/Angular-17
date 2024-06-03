@@ -1,46 +1,10 @@
 {
   "seller": [
     {
-      "id": "aabb",
-      "name": "Suparna Das",
+      "id": "49f4",
+      "name": "sid",
       "password": "1234",
-      "email": "suparna43@gmail.com"
-    },
-    {
-      "id": "9db1",
-      "name": "rajib Das",
-      "password": "1234",
-      "email": "rajib32@gmail.com"
-    },
-    {
-      "id": "4142",
-      "name": "Siddhartha",
-      "password": "1",
-      "email": "test11@codeclouds.com"
-    },
-    {
-      "id": "b51b",
-      "name": "souvik das",
-      "password": "1234",
-      "email": "test11@codeclouds.com"
-    },
-    {
-      "id": "7174",
-      "name": "kaustav dutta",
-      "password": "1234",
-      "email": "test11@codeclouds.com"
-    },
-    {
-      "id": "8cd6",
-      "name": "test test",
-      "password": "1234",
-      "email": "test11@codeclouds.in"
-    },
-    {
-      "id": "bbf3",
-      "name": "okokowfk",
-      "password": "1",
-      "email": "test11@codeclouds.com"
+      "email": "test@gmail.com"
     }
   ],
   "products": [
@@ -93,6 +57,36 @@
       "image": "https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1708671939/Croma%20Assets/Communication/Mobiles/Images/300679_0_ywgnrd.png?tr=w-640",
       "sale": "Sale",
       "id": "3d20"
+    },
+    {
+      "id": "c05f",
+      "name": "test",
+      "price": 1222,
+      "color": "test",
+      "category": "test",
+      "description": "test",
+      "image": "test",
+      "sale": ""
+    },
+    {
+      "id": "93ba",
+      "name": "siddhartha",
+      "price": "11",
+      "color": "ee",
+      "category": "ee",
+      "description": "test",
+      "image": "test",
+      "sale": ""
+    },
+    {
+      "id": "89fc",
+      "name": "Hp Laptop",
+      "price": "26,990",
+      "color": "Black",
+      "category": "Laptop",
+      "description": "Good Laptop",
+      "image": "https://m.media-amazon.com/images/I/81bu95bhbOL._SX522_.jpg",
+      "sale": "Sale"
     }
   ]
 }

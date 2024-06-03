@@ -1,0 +1,47 @@
+
+
+h5, .h5 {
+    font-size: 1rem;
+}
+
+h4.mb-3 {
+    font-size: 19px;
+    margin-top: 18px;
+    margin-bottom: 10px !important;
+}
+
+.vertical-tab .nav-link {
+    font-size: 14px;
+    border: 1px solid #dee2e6;
+    color: #000;
+    padding: .875rem .5rem;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    cursor: pointer;
+}
+
+.vertical-tab .nav-link.active::after {
+    content: "";
+    position: absolute;
+    width: .75rem;
+    height: .75rem;
+    top: 18px;
+    right: -6px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    background: var(--phoenix-body-bg);
+    border-width: 1px 0 0 1px;
+    border-style: solid;
+    border-color: var(--phoenix-border-color);
+}
+
+.vertical-tab .nav-link.active {
+    font-size: 12.8px;
+    background: #eee;
+}
+
+.form-control::placeholder {
+    font-size: 13px;
+}
